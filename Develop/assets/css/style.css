@@ -1,13 +1,15 @@
+/* Universal styling */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/* Background color for the body of the page */
 body {
     background-color: #d9dcd6;
 }
 
+/* Renamed to header to select easier */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -20,7 +22,8 @@ header h1 {
     font-size: 48px;
 }
 
-header h1 .seo {
+/* Trying span rather than .seo selctor */
+header h1 span {
     color: #d9dcd6;
 }
 
@@ -136,7 +139,8 @@ p {
     max-width: 150px;
 } */
 
-.content div {
+/* This may not need to be as descriptive as it is, maybe a .content will work? But haven't been able to so far. */
+.content section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -201,4 +205,11 @@ p {
 
 .footer h2 {
     font-size: 20px;
+}
+
+/* havin some fun */
+.seo:hover {
+    /* font-size:larger; */
+    text-decoration: underline;
+    cursor: crosshair;
 }
